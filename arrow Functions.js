@@ -1,16 +1,27 @@
-function func() {
-    const a = b = c = 1;
-}
+let myFun =(a,b)=>{
+    console.log(a*b)};
+myFun(3,3);
 
-func();
-console.log(typeof a, typeof b, typeof c)
-
-let myFun =(a,b)=>
-    a*b;
-// const cc = ;
-console.log(myFun(3,3));
-
-const addArrow = (a, b) => a + b;
+const addArrow = (g, f) => f + g;
 
 // console.log(add(2, 3));  
 console.log(addArrow(2, 3));
+
+const zbc =()=> {console.log(2+2)};
+zbc();
+
+function regularFunction() {
+    setTimeout(function() {
+      console.log("Regular function:", this); // 'this' is bound dynamically
+    }, 100);
+  }
+  
+  function arrowFunction() {
+    setTimeout(() => {
+      console.log("Arrow function:", this); // 'this' is inherited from the lexical scope
+    }, 100);
+  }
+  
+  regularFunction(); // Output: Regular function: [object Window]
+  arrowFunction();   // Output: Arrow function: [object Window]
+  
