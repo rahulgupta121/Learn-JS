@@ -31,3 +31,18 @@ let elements = document.querySelectorAll('.myClass');
 3. Manipulating Elements
 You can manipulate the elements by changing their properties, attributes, and content:
 */}
+
+a1.addEventListener("click", function () {
+  a1.style.color= "red"
+  a1.innerHTML="hjjh"
+})
+
+a1.addEventListener("onClick", function () {
+  
+})
+onblur
+onchange
+onfocus
+setInterval
+setTimeout
+setTimein
